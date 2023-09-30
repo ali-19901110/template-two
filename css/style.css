@@ -12,6 +12,8 @@ html{
 }
 :root{
     --main-color: #00c7fc;
+    --secound-color: #777;
+    --section-padding: 100px;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -42,8 +44,8 @@ ul{
     }
 }
 /* Start Components */
-.main-heading{
-    text-align: center;
+   .main-heading{
+   text-align: center;
 }
 .main-heading h2{
    font-weight: normal;
@@ -55,7 +57,7 @@ ul{
 .main-heading h2::before{
     content: "";
     position: absolute;
-    width: 15%;
+    width: 80px;
     height: 2px;
     background: #c5c5c5;
     bottom: -30px;
@@ -78,7 +80,7 @@ ul{
     width: 550px;
     margin: 0 auto 100px;
     line-height: 2;
-    color: #777;
+    color: var(--secound-color);
     max-width: 100%;
 }
 /* End Components */
@@ -111,8 +113,7 @@ header .container::before{
     left: 15px;
     bottom: 0px;
 }
-header .logo {
-}
+
 header .logo img{
     height: 45px;
 
@@ -284,7 +285,58 @@ header nav .form i{
     background-color: var(--main-color);
 }
 /* End Landing */
-.section{
-    padding: 100px;
-    
+/* Start Services */
+.sec-services{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
+@media (min-width: 768px){
+    .sec-services .services{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+.sec-services .services .service{
+    /* padding: 10px; */
+    display: flex;
+  
+}
+
+.sec-services .services .service .icon{
+   margin-right: 50px;
+}
+@media (max-width: 767px){
+    .sec-services .services .service{
+        /* padding: 10px; */
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .sec-services .services .service .icon{
+        margin: 10px 0 20px;
+     }
+}
+.sec-services .services .service .icon i{
+    font-size: 30px;
+    color: var(--secound-color);
+} 
+.sec-services .services .service .text{
+    /* padding: 10px; */
+
+} 
+.sec-services .services .service .text h3{
+    color: var(--main-color);
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+} 
+.sec-services .services .service .text p{
+/* max-width: 100%; */
+color: var(--secound-color);
+font-size: 13px;
+font-weight: normal;
+line-height: 2;
+} 
+/* End Services */
