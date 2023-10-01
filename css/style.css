@@ -340,3 +340,120 @@ font-weight: normal;
 line-height: 2;
 } 
 /* End Services */
+/* Start Design One */
+/* .design-setion-one{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 550px;
+    background-color: #777;
+    background-image: url(../images/design-one.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.design-setion-one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 60%);
+}
+.design-setion-one img{
+    position: absolute;
+    bottom: -54px;
+    left: 10%;
+}
+.design-setion-one .contents{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: rgb(11, 117, 144, 0.5);
+    padding: 30px;
+    color: white;
+    max-width: 100%;
+}
+@media (max-width: 767px){
+    .design-setion-one .contents{
+        width: 100%;
+    }
+}
+.design-setion-one .contents h3{
+    margin: 20px 0;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+.design-setion-one .contents .content{
+    display: flex;
+    margin-bottom: 20px;
+}
+.design-setion-one .contents .content i{
+    margin-right: 20px;
+} */
+.design{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 600px;
+    position: relative;
+    background-image: url(../images/design-one.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
+.design::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 60%);
+}
+.design .image,
+ .design .text{
+   position: relative;
+   z-index: 2;
+   flex: 1;
+}
+.design .image{
+    text-align: center;
+}
+@media (max-width: 767px){
+    .design .image{
+        display: none;
+    }
+}
+.design .image img{
+    position: relative;
+    bottom: -150px;
+}
+.design .text{
+    color: white;
+    padding: 50px;
+    background-color: rgb(11, 117, 144, 0.5);
+}
+.design .text .h2{
+font-weight: normal;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+.design .text ul li{
+    padding: 15px 0;
+    /* position: relative; */
+}
+.design .text ul li::before{
+    font-family: 'Font Awesome 5 free';
+    content: '\f27a';
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+/* End Design One */
