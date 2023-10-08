@@ -322,10 +322,7 @@ header nav .form i{
     font-size: 30px;
     color: var(--secound-color);
 } 
-.sec-services .services .service .text{
-    /* padding: 10px; */
 
-} 
 .sec-services .services .service .text h3{
     color: var(--main-color);
     font-weight: normal;
@@ -339,62 +336,6 @@ font-size: 13px;
 font-weight: normal;
 line-height: 2;
 } 
-/* End Services */
-/* Start Design One */
-/* .design-setion-one{
-    padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
-    height: 550px;
-    background-color: #777;
-    background-image: url(../images/design-one.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-.design-setion-one::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0 0 0 / 60%);
-}
-.design-setion-one img{
-    position: absolute;
-    bottom: -54px;
-    left: 10%;
-}
-.design-setion-one .contents{
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translatey(-50%);
-    background-color: rgb(11, 117, 144, 0.5);
-    padding: 30px;
-    color: white;
-    max-width: 100%;
-}
-@media (max-width: 767px){
-    .design-setion-one .contents{
-        width: 100%;
-    }
-}
-.design-setion-one .contents h3{
-    margin: 20px 0;
-    color: white;
-    font-weight: normal;
-    font-size: 20px;
-}
-.design-setion-one .contents .content{
-    display: flex;
-    margin-bottom: 20px;
-}
-.design-setion-one .contents .content i{
-    margin-right: 20px;
-} */
 .design{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -457,3 +398,83 @@ margin-bottom: 40px;
     top: 1px;
 }
 /* End Design One */
+/* Start Portfolio */
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-top: var(--section-padding);
+}
+.portfolio .shuffle{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+.portfolio .shuffle li{
+    font-size: 13px;
+    padding: 10px;
+}
+/* @media (max-width: 767px){
+    .portfolio .shuffle li{
+        margin-right: 10px;
+    }
+} */
+.portfolio .shuffle li.active{
+    background-color: var(--main-color);
+    color: white;
+}
+.portfolio .album {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.portfolio .album .box{
+    overflow: hidden;
+    position: relative;
+}
+.portfolio .album .box.box:hover .caption{
+    bottom: 0;
+}
+.portfolio .album .box:hover img{
+    transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px){
+    .portfolio .album .box{
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1000px){
+    .portfolio .album .box{
+        flex-basis: 25%;
+    }
+}
+.portfolio .album .box img{
+    max-width: 100%;
+    transition: 0.3s;
+}
+.portfolio .album .box .caption{
+    position: absolute;
+     left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%; 
+}
+.portfolio .album .box .caption h4{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.portfolio .album .box .caption p{
+    color: var(--main-color);
+}
+.portfolio .more{
+   background-color: var(--main-color);
+   color: white;
+   padding: 15px 20px;
+   display: block;
+   margin: 30px auto;
+   width: fit-content;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+/* End Portfolio */
