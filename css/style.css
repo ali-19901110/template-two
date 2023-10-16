@@ -603,3 +603,156 @@ flex-wrap: wrap;
     font-size: 13px;
 }
 /* End About */
+/* Start Skills */
+.skills{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.skills .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@media (max-width: 767px){
+    .skills .container{
+        flex-direction: column;
+    }
+}
+.skills .container .testimonials{
+    text-align: center;
+}
+.skills .container .testimonials ,
+.skills .container .our-skills{
+   flex-basis: 45%;
+   
+}
+/* @media (max-width: 767px){
+    .skills .container .testimonials ,
+.skills .container .our-skills{
+    flex-basis: 100%;
+    width: 100%;
+   
+}
+} */
+.skills .container .testimonials .main-addres h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.skills .container .testimonials .main-addres p{
+    font-size: 13px;
+    color: #a8a8a8;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+.skills .container .testimonials .info{
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   margin-bottom: 30px;
+   align-items: center;
+}
+@media (max-width: 767px){
+.skills .container .testimonials .info{
+    flex-direction: column;
+}
+.skills .container .testimonials .info img{
+    margin-bottom: 20px;
+}
+}
+.skills .container .testimonials .info::after{
+   content: "John Doe,CEO";
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   padding-bottom: 10px;
+   color: #a8a8a8;
+   font-size: 13px;
+}
+.skills .container .testimonials .info img{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   margin-right: 50px;
+}
+.skills .container .testimonials .info .text{
+  flex: 1;
+  border-bottom: 1px solid black;
+}
+.skills .container .testimonials .info .text p{
+  text-align: left;
+  padding-bottom: 40px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.skills .container .testimonials .shuffel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   }
+.skills .container .testimonials .shuffel span{
+ display: block;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ border: 1px solid black;
+ margin-right: 5px;
+}
+.skills .container .testimonials .shuffel .active ,
+.skills .container .testimonials .shuffel span:hover span{
+    background-color: var(--main-color);
+}
+
+/* StartOurSills */
+.skills .container .our-skills{
+    
+}
+.skills .container .our-skills h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.skills .container .our-skills > p{
+    font-size: 13px;
+    color: #a8a8a8;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+.skills  .our-skills .prog-holder{
+    margin-bottom: 20px;
+}
+.skills  .our-skills .prog-holder h4{
+text-transform: uppercase;
+font-size: 13px;
+font-weight: normal;
+margin-bottom: 10px;
+}
+.skills  .our-skills .prog-holder .prog{
+    background-color: #dedadc;
+    height: 20px;
+}
+.skills  .our-skills .prog-holder .prog span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+}
+.skills  .our-skills .prog-holder .prog span::after{
+    content: attr(data-progress);
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+.skills  .our-skills .prog-holder .prog span::before{
+    content: "";
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    right: -10px;
+    top: -12px;
+}
+/* EndOurSkills */
+/* End Skills */
